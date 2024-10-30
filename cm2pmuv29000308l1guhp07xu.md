@@ -5,7 +5,7 @@ seoDescription: "Learn why the viewport meta tag is crucial for responsive web d
 datePublished: Sat Oct 26 2024 04:00:20 GMT+0000 (Coordinated Universal Time)
 cuid: cm2pmuv29000308l1guhp07xu
 slug: what-is-the-viewport-meta-tag-and-why-does-it-matter
-cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1729914856593/2b32c904-e70a-4913-bac5-ae300ae08107.png
+cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1730266142179/6deaf628-69a1-4c74-9e87-0a6c4201c839.png
 tags: web-development, html5, frontend-development, meta-tags
 
 ---
