@@ -22,7 +22,7 @@ In this blog, we will study them individually and understand why they are used t
 
 Instead of downloading a single large JavaScript file, code splitting helps in dissecting your code into individual bundles and only download ones that are required.
 
-**Note**: <mark>Code splitting is primarily about how you structure your application's assets for efficient loading. It doesn’t specify </mark> *<mark>when</mark>* <mark> these assets should be loaded, only that they are separated into different files.</mark>
+**Note**: <mark>Code splitting is primarily about how you structure your application's assets for efficient loading. It doesn’t specify </mark> *<mark>when</mark>* <mark>these assets should be loaded, only that they are separated into different files.</mark>
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1730784752302/df1e59ae-dcd6-4951-a169-704d989479f2.png align="center")
 
@@ -56,7 +56,7 @@ If you apply lazy loading without code splitting, here’s what would happen:
 * ✨ **Unused lazy loading**: Without code splitting, lazy loading is essentially “inactive” because all code is loaded at once. This would result in the entire application being ready immediately, so there would be no delayed loading.
     
 
-### ⚛️`React.Lazy()`, `<Suspense>` and `import()`
+### ⚛️ `React.Lazy()`, `<Suspense>` and `import()`
 
 We can use `import()` for code splitting, `React.Lazy()` for lazy loading and `Suspense` to handle fallback UI while the component is loading. Here’s how each of these works:
 
@@ -77,7 +77,7 @@ export default function Home() {
 }
 
 const HomeComponent = import("./Home.jsx").then((module) => module.default));
-const addFunction = import("./add.js").then((module) => {return {default: module.add}) 
+const addFunction = import("./add.js").then((module) => {return {default: module.add})
 ```
 
 * `React.Lazy()` : It is a special function provided by React to lazily load a component. It takes a function as its parameter - <mark>a function that must return a promise that resolves to a module with a default export</mark>. Thus, `import()` is the perfect match for it’s argument. When it calls the `import()` function, it receives a special object which looks like this.
